@@ -15,6 +15,6 @@ jobs:
     steps:
       - run: |
             echo "I failed"
-            echo "I faile"
+            exit 1 
       - run: echo "goodbye"
 
