@@ -1,4 +1,4 @@
-name: Using Different Events to Trigger Workflows
+name: 02 - Using Different Events to Trigger Workflows
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   Events:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Show the trigger
         run: echo "The event ${{github.event_name}}"
