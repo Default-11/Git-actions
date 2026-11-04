@@ -11,7 +11,7 @@ jobs:
       - name: Show OS
         run: echo "This job is running on an ${{runner.os}}"
   windows-echo:
-    runs-on: windwos-latest
+    runs-on: windows-latest
     steps:
       - name: Show OS
         run: echo "This job is running on an ${{runner.os}}"   
