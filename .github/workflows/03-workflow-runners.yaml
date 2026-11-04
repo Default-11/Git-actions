@@ -7,12 +7,12 @@ on:
 jobs:
   ubuntu-echo:
     runs-on: ubuntu-latest
-      steps:
-        - name: Show OS
-          run: echo "This job is running on an ${{runner.os}}"
+    steps:
+      - name: Show OS
+        run: echo "This job is running on an ${{runner.os}}"
   windows-echo:
     runs-on: windwos-latest
-      steps:
-        - name: Show OS
-          run: echo "This job is running on an ${{runner.os}}"   
+    steps:
+      - name: Show OS
+        run: echo "This job is running on an ${{runner.os}}"   
   
