@@ -1,0 +1,14 @@
+name: 04 - Working with Third-Party Custom Actions
+
+on: 
+  - push  
+  - workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        run : actions/checkout@v7
+      - name: list out
+        run : ls
