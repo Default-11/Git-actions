@@ -1,14 +1,23 @@
 name: 04 - Working with Third-Party Custom Actions
 
 on: 
-  - push  
   - workflow_dispatch
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 
     steps:
       - name: checkout code
         uses: actions/checkout@v7
-      - name: list out
-        run : ls
+      - name: node setup
+        uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24.x'
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run Unit Tests
+        run: npm run test 
+              
