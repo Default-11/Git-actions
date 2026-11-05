@@ -5,8 +5,8 @@ on:
   workflow_dispatch: 
     inputs:
       debug:
-        type: string
-        default: "Print it"
+        type: boolean
+        default: true
 
 jobs:
   echo-data:
