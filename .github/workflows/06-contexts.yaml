@@ -4,8 +4,8 @@ on:
   workflow_dispatch: 
     inputs:
       debug:
-        type: boolean
-        default: true
+        type: string
+        default: "debug value"
 
 jobs:
   echo-data:
