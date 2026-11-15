@@ -5,9 +5,9 @@ on:
     inputs:
       build-status:
         type: choice
-        default: succcess
+        default: success
         options:
-          - success
+          - succcess
           - failure
 
 jobs:
